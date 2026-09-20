@@ -1,1 +1,0 @@
-# QA-Manual-Testing-SauceDemo
