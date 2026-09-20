@@ -1,0 +1,9 @@
+# Defects — SauceDemo
+
+Screenshots and recordings are in the `evidence/` folder.
+
+| id | Title | Test case id | Actual result | Evidence |
+|----|-------|--------------|---------------|----------|
+| 1 | standard_user: Reset App State clears the cart badge but does not reset product buttons from 'Remove' to 'Add to cart' | 27 | **Actual:** After clicking "Reset App State", the cart badge is cleared, but the product buttons still show 'Remove' instead of 'Add to cart'. They reset only after a manual page refresh.<br/><br/>**Steps to Reproduce:**<br/>1. Log in as standard\_user<br/>2. Add 2–3 items to the cart from the Products page<br/>3. Open the hamburger menu and click "Reset App State"<br/>4. Observe the product buttons on the Products page<br/><br/>**Expected:** Cart badge is cleared AND all product buttons return to 'Add to cart'. | [▶ GIF](evidence/03-defect%201.gif) |
+| 2 | problem_user: All product images are identical/unrelated on the Products page | — | **Actual result:** When logged in as problem\_user, every product on the Products page displays the same unrelated image instead of its own product photo.<br/><br/>1. Log in as problem\_user / secret\_sauce<br/>2. Observe the product images on the Products page<br/><br/>**Expected result:** Each product displays its own correct image. | <img src="evidence/04-defect%202.png" width="320" alt="Identical product images"> |
+| 3 | problem_user: Product sorting has no effect — order does not change when a sort option is selected | — | **Actual result:** When logged in as problem\_user, selecting any option from the sort dropdown does not reorder the products — the product order stays the same.<br/><br/>1. Log in as problem\_user / secret\_sauce<br/>2. On the Products page, open the sort dropdown<br/>3. Select any sort option<br/><br/>**Expected result:** Products are reordered according to the selected sort option. | [▶ GIF](evidence/05-defect%203.gif) |
