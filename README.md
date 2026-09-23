@@ -24,7 +24,7 @@ reporting.
 ## Repository structure
 
 ```
-saucedemo-manual-testing/
+QA-manual-testing-saucedemo/
 ├── evidence/               <- (Qase run dashboard, defect evidence, Jira screenshots)
 ├── README.md
 ├── defects.md
