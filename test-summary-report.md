@@ -35,7 +35,10 @@ Execution was performed as a structured test run under `standard_user`
 |---|-------|----------|---------|
 | 1 | Reset App State clears the cart badge but does not reset product buttons from 'Remove' to 'Add to cart' | Minor | standard_user |
 | 2 | All product preview images are identical/unrelated on the Products page | Major | problem_user |
-| 3 | Sorting does not change product order when a sort option is selected | Minor | problem_user |
+| 3 | Sorting does not change product order when a sort option is selected | Major | problem_user |
+
+All three defects were also logged as bugs in Jira (SDQA-1, SDQA-2, SDQA-3)
+and planned for retest in the current sprint.
 
 ## 4. Conclusion
 
